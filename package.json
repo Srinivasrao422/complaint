@@ -1,0 +1,13 @@
+{
+  "name": "scms",
+  "private": true,
+  "description": "Run scripts from repo root. Frontend deps: use pnpm (npm often fails with EPERM under OneDrive).",
+  "scripts": {
+    "dev": "npm run dev --prefix ./resolve-it-now",
+    "dev:frontend": "npm run dev --prefix ./resolve-it-now",
+    "dev:backend": "npm run dev --prefix ./backend",
+    "build": "npm run build --prefix ./resolve-it-now",
+    "install:frontend": "npx pnpm -C resolve-it-now install",
+    "install:backend": "npm install --prefix ./backend"
+  }
+}
